@@ -1,6 +1,6 @@
 ---
-layout: Page
+layout: page
 Title: Page Test
 ---
 
-testing page layout
+testing page
