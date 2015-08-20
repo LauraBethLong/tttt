@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Page Test
 ---
 
 testing page layout
