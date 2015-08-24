@@ -24,13 +24,13 @@ title: Blog
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a class="pagination-item older" href="{{ paginator.previous_page_path }}">&laquo; Previous</a>
+    <a class="pagination-item older" href="{{ paginator.next_page_path }}">&laquo; Older</a>
   {% else %}
-    <span class="pagination-item older">&laquo; Previous</span>
+    <span class="pagination-item older">&laquo; Older</span>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a class="pagination-item newer" href="{{ paginator.next_page_path }}"> Newer &raquo;</a>
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path }}"> Newer &raquo;</a>
   {% else %}
     <span class="pagination-item newer">Newer &raquo;</span>
   {% endif %}
