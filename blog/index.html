@@ -28,7 +28,6 @@ title: Blog
   {% else %}
     <span class="pagination-item older">&laquo; Older</span>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.previous_page %}
     <a class="pagination-item newer" href="{{ paginator.previous_page_path }}"> Newer &raquo;</a>
   {% else %}
