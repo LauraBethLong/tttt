@@ -23,17 +23,14 @@ title: Blog
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">&laquo; Older</a>
-  {% else %}
-    <span class="pagination-item older">&laquo; Older</span>
-  {% endif %}
   {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer &raquo;</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer &raquo;</a>
-    {% endif %}
+    <a class="pagination-item older" href="{{ paginator.previous_page_path }}">&laquo; Previous</a>
+  {% else %}
+    <span class="pagination-item older">&laquo; Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a class="pagination-item newer" href="{{ paginator.next_page_path }}"> &raquo;</a>
   {% else %}
     <span class="pagination-item newer">Newer &raquo;</span>
   {% endif %}
