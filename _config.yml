@@ -1,3 +1,8 @@
+# Setup
+url: http://www.laurabethlong.com/tttt
+baseurl: http://www.laurabethlong.com/tttt
+
+
 # Permalinks
 permalink: pretty
 relative_permalinks: true
